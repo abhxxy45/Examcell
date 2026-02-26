@@ -1,0 +1,5 @@
+{
+  "name": "ExamCell",
+  "description": "A comprehensive system for managing college examinations, student records, hall tickets, results, and automated seating allocation.",
+  "requestFramePermissions": []
+}
