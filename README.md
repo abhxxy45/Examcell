@@ -1,73 +1,112 @@
-# Exam Cell Management System
+# ExamCell — Exam Management System
 
-## 📌 Project Description
+Web-based examination management platform for managing exams, student records, and results digitally.
 
-The Exam Cell Management System is a web-based application designed to manage examination-related activities in an educational institution.
-It helps administrators manage student records, exam details, and results efficiently.
+## Tech Stack
 
----
+| Layer | Technology |
+|-------|------------|
+| **Frontend** | React 19, TypeScript, Vite |
+| **Backend** | Node.js, Express.js, TypeScript |
+| **Database** | MySQL |
+| **API** | REST |
+| **Build** | Vite, npm |
 
-## 🎯 Features
-
-* Student record management
-* Exam schedule management
-* Result management
-* Secure data handling
-* Simple web interface
-
----
-
-## 🛠️ Technologies Used
-
-* TypeScript
-* HTML
-* Node.js
-* Vite
-
----
-
-## 📂 Project Structure
+## Project Structure
 
 ```
-src/            → Source code
-server.ts       → Backend server
-index.html      → Main HTML file
-package.json    → Project dependencies
-tsconfig.json   → TypeScript configuration
-vite.config.ts  → Vite configuration
+Examcell/
+├── src/                    # Frontend source
+│   ├── components/         # React components
+│   ├── services/           # API services
+│   ├── types/              # TypeScript types
+│   └── ...
+├── server.ts               # Express server entry
+├── vite.config.ts          # Vite configuration
+├── tsconfig.json           # TypeScript config
+├── package.json            # Dependencies
+└── README.md
 ```
 
----
+## Features
 
-## ⚙️ Installation
+- **Exam Management**: Create, schedule, and manage examinations
+- **Student Records**: Digital student database with profiles
+- **Results Management**: Enter, calculate, and publish results
+- **Role-based Access**: Admin, faculty, and student dashboards
+- **REST API**: Structured backend endpoints for all operations
 
-1. Clone the repository
+## Setup Instructions
 
-```
-git clone https://github.com/abhxxy45/examcell.git
-```
+### Prerequisites
+- Node.js 18+
+- MySQL 8.0+
+- npm
 
-2. Install dependencies
+### Installation
 
-```
+```bash
+# Clone repository
+git clone https://github.com/abhxxy45/Examcell.git
+cd Examcell
+
+# Install dependencies
 npm install
-```
 
-3. Run the project
+# Configure database
+# Update database credentials in server.ts or config file
 
-```
+# Run database migrations (if applicable)
+# mysql -u root -p < database/schema.sql
+
+# Start development server
 npm run dev
 ```
 
+### Environment Variables
+
+Create `.env` file (see `.env.example` if available):
+
+```env
+DB_HOST=localhost
+DB_USER=root
+DB_PASSWORD=your_password
+DB_NAME=examcell
+PORT=3000
+```
+
+## API Endpoints
+
+| Method | Endpoint | Description |
+|--------|----------|-------------|
+| GET | /api/exams | List all exams |
+| POST | /api/exams | Create new exam |
+| GET | /api/students | List all students |
+| POST | /api/students | Add new student |
+| GET | /api/results | Get results |
+| POST | /api/results | Submit results |
+
+## Development
+
+```bash
+# Frontend dev server
+npm run dev
+
+# Build for production
+npm run build
+
+# Preview production build
+npm run preview
+```
+
+## Screenshots
+
+*To be added*
+
+## License
+
+MIT License — see [LICENSE](LICENSE) for details.
+
 ---
 
-## 👨‍💻 Author
-
-Abhay Verma
-
----
-
-## 📫 Contact
-
-Email: abhayvermaa45@gmail.com
-GitHub: https://github.com/abhxxy45
+**Repository**: https://github.com/abhxxy45/Examcell
